@@ -1,0 +1,13 @@
+{
+  "name": "fanava-full-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "server": "cd backend && node server.js",
+    "client": "cd frontend && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
