@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  src: url('Rubik-Light.ttf') format('truetype');
+}
+
+/* Regular 400 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: url('Rubik-Regular.ttf') format('truetype');
+}
+
+/* Medium 500 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: url('Rubik-Medium.ttf') format('truetype');
+}
+
+/* SemiBold 600 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 600;
+  src: url('Rubik-SemiBold.ttf') format('truetype');
+}
+
+/* Bold 700 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src: url('Rubik-Bold.ttf') format('truetype');
+}
+
+/* ExtraBold 800 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 800;
+  src: url('Rubik-ExtraBold.ttf') format('truetype');
+}
+
+/* Black 900 */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 900;
+  src: url('Rubik-Black.ttf') format('truetype');
+}
+
+/* Default font for site */
+body {
+  font-family: 'Rubik', sans-serif;
+}

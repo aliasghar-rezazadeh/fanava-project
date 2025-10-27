@@ -1,0 +1,13 @@
+#banner {
+  height: 400px;
+  background: url('https://fanava.net/wp-content/uploads/2023/09/banner.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+#banner h1 {
+  font-size: 42px;
+}

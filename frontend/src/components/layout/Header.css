@@ -1,0 +1,150 @@
+.he-header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 82px;
+  padding: 5px 100px;
+}
+
+/* لوگو */
+.he-logo img {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
+/* منو */
+.he-nav .he-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* آیتم منو */
+.he-menu-item {
+  position: relative;
+  font-size: 16px;
+}
+
+/* اطلاعات زیر منو */
+.he-menu-titr {
+  background: transparent;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  color: #333;
+  padding: 6px 8px;
+}
+
+
+/*  */
+/* لینک ساده */
+.he-link {
+  text-decoration: none;
+  color: #333;
+  padding: 6px 8px;
+}
+
+/* hover */
+.he-menu-titr:hover,
+.he-link:hover {
+  color: #007bff;
+}
+/*  */
+
+
+/* زیرمنو */
+.he-submenu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  min-width: 200px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+  display: none;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.he-submenu div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* هر آیتم زیرمنو */
+.he-submenu li {
+  width: 340px;
+  padding: 13px 20px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* سر تیتر زیر منو ها */
+.he-submenu p{
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* زیر منو ها */
+.he-submenu li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+
+}
+
+/* هاور آیتم‌های زیرمنو */
+.he-submenu li:hover {
+  background: #005595;
+}
+.he-submenu li:hover a {
+  color: white;
+}
+
+/* کلاس اوپن که با استیت باز میشود (هم هاور و هم کلیک از جاوااسکریپت بازش می‌کند) */
+.he-submenu.open {
+  display: block;
+  opacity: 1;
+  transform:translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+/* دکمه */
+.h-button {
+  font-size: 18px;
+  border: 1px solid #cacfd8;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin: 0 5px;
+  padding: 12px 17px 12px 15px;
+}
+
+.he-button-1{
+  background-color: #000238;
+  color: white;
+}
+.he-button-2{
+  background-color: white;
+  color: black;
+}
