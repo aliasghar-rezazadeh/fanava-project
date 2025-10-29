@@ -1,13 +1,126 @@
-#banner {
-  height: 400px;
-  background: url('https://fanava.net/wp-content/uploads/2023/09/banner.jpg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+.banner-container {
+  width: 100%;
+  height: 480px; /* ارتفاع بنر را تنظیم کنید */
+  background-color: #f0f0f0; /* رنگ پس‌زمینه تا زمان لود شدن عکس */
 }
 
-#banner h1 {
-  font-size: 42px;
+.swiper, .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-content {
+  position: relative; /* برای قرارگیری متن روی عکس */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slide-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* عکس کل کادر را بپوشاند و دفرمه نشود */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* لایه متن روی عکس */
+.text-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 30px;
+  max-width: 600px; 
+  color: #0e587c;
+  margin-right: 15%; 
+  transform: translateY(200px);
+  transition: all 0.8s ease;
+}
+
+.swiper-slide-active .text-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.text-overlay h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #0e587c;
+  margin: 0px 0px 30px;
+}
+.text-overlay p {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0 0 60px;
+  color: #0e587c;
+}
+
+.cta-button {
+  background-color: #0e587c;
+  color: white;
+  padding: 20px 40px;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.9s ease;
+  font-size: 19.2px;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.swiper-button-next , .swiper-button-prev{
+  width: 20px;
+  height: 20px;
+  color: aliceblue;
+}
+
+/* استایل‌دهی به دکمه‌های چپ و راست خود Swiper */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2rem !important;
+  color: white !important;
+  font-weight: 900;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+/* استایل‌دهی به نقطه‌های پایین */
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+}
+
+
+@media (max-width: 768px) {
+  .banner-container {
+    height: 350px;
+  }
+
+  .text-overlay {
+    margin-right: 0;
+    text-align: center;
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .text-overlay h2 {
+    font-size: 1.8rem;
+  }
+
+  .text-overlay p {
+    font-size: 1.1rem;
+  }
 }
